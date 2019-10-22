@@ -15,8 +15,10 @@ func main() {
 	chess[1] = "4"
 	chess = append(chess, "wertyu")
 	chess = append(chess, "hhhhhh", "dddddd", "eeeeeee")
-	chess = append(chess[:3], chess[4:]...)
+	//chess = append(chess[:3], chess[4:]...)
 	fmt.Println(chess)
 	fmt.Println(len(chess))
-
+	var mild = make([]string, 2)
+	copy(mild, chess)
+	fmt.Println(mild)
 }
