@@ -39,6 +39,13 @@ func main() {
 		name: name{a: 1, b: 2, c: 2},
 	}
 	fmt.Println(g.name.a)
+
+	r := name{a: 1, b: 2, c: 3}
+	j := name{a: 2, b: 2, c: 3}
+	if r == j {
+		fmt.Println("比较结构")
+	}
+
 }
 
 func newJack(x int) jack {
